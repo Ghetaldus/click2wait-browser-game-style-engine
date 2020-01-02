@@ -1,0 +1,500 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8534359147886369699
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1747735521527302986}
+  - component: {fileID: 7081155336411785189}
+  - component: {fileID: 377147992363202825}
+  - component: {fileID: 6802843927440606128}
+  - component: {fileID: 1717119643106679797}
+  - component: {fileID: 2791825423208665546}
+  - component: {fileID: 6895686853608339401}
+  - component: {fileID: 8455687531684686319}
+  - component: {fileID: 6619389058472513143}
+  - component: {fileID: 2606598256019793590}
+  - component: {fileID: 1084528879174032868}
+  - component: {fileID: 4054298789496815916}
+  - component: {fileID: 6773717741541199740}
+  - component: {fileID: 1705918617139644489}
+  - component: {fileID: 6831931554134797334}
+  - component: {fileID: 3173196976442997774}
+  - component: {fileID: 8079742343300827981}
+  - component: {fileID: 43393176051856834}
+  - component: {fileID: 1779890651848040830}
+  m_Layer: 0
+  m_Name: Player
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1747735521527302986
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8534359147886369699}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7081155336411785189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8534359147886369699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 665dd2f43078442ed925257505f2901a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+--- !u!114 &377147992363202825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8534359147886369699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serverOnly: 0
+  m_AssetId: 1b3ab360d7a6d4ccba93da5ceb049dac
+  m_SceneId: 0
+--- !u!114 &6802843927440606128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8534359147886369699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82c415d0a74a04f6788fcdfd3cef6d2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 1
+  syncInterval: 0.1
+  level: 1
+  maxLevel: 3
+  capacity:
+    baseValue: 99
+    bonusPerLevel: 0
+  upgradeCost: []
+  refreshInterval: 1
+  defaultBuffs:
+  - title: 
+    state: 0
+    timer: 0
+    minLevel: 1
+    maxLevel: 1
+    template: {fileID: 11400000, guid: 84a4d3a2c70054964ab12580102edce5, type: 2}
+  dummyBuffs: []
+  randomizeIndex: 0
+--- !u!114 &1717119643106679797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8534359147886369699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8377e7cc382947a18191ae466487a3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 1
+  syncInterval: 0.1
+  level: 1
+  maxLevel: 3
+  capacity:
+    baseValue: 5
+    bonusPerLevel: 0
+  upgradeCost: []
+  refreshInterval: 1
+  defaultBuildings:
+  - title: 
+    state: 0
+    timer: 0
+    minLevel: 1
+    maxLevel: 1
+    template: {fileID: 11400000, guid: eda390548271242b6bd6ef184515bfc0, type: 2}
+  dummyBuildings: []
+  randomizeIndex: 1
+--- !u!114 &2791825423208665546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8534359147886369699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b8e5eada1cb44299ad1d18cf9737e06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 1
+  syncInterval: 0.1
+  level: 1
+  maxLevel: 3
+  capacity:
+    baseValue: 99
+    bonusPerLevel: 0
+  upgradeCost: []
+  refreshInterval: 1
+  defaultCurrencies:
+  - title: 
+    state: 0
+    timer: 0
+    minAmount: 1
+    maxAmount: 10
+    template: {fileID: 11400000, guid: 8bf34c8c83d42498ab74d413b6b3ec14, type: 2}
+  - title: 
+    state: 0
+    timer: 0
+    minAmount: 1
+    maxAmount: 10
+    template: {fileID: 11400000, guid: 97419fc7a5b2047a5a1190f736010473, type: 2}
+  - title: 
+    state: 0
+    timer: 0
+    minAmount: 1
+    maxAmount: 10
+    template: {fileID: 11400000, guid: 8339eb23f35e842fba1c8f843165645f, type: 2}
+--- !u!114 &6895686853608339401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8534359147886369699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a4692b9866c1418381771a1170a0011, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 1
+  syncInterval: 0.1
+  level: 1
+  maxLevel: 3
+  capacity:
+    baseValue: 99
+    bonusPerLevel: 0
+  upgradeCost: []
+  refreshInterval: 1
+  defaultEnhancements:
+  - title: 
+    state: 0
+    timer: 0
+    minLevel: 1
+    maxLevel: 1
+    template: {fileID: 11400000, guid: 0bf5369e8888246e8a42f4a4772cfad5, type: 2}
+  dummyEnhancements: []
+  randomizeIndex: 0
+--- !u!114 &8455687531684686319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8534359147886369699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a8d71d7c22864e58be44b21228fe278, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 1
+  syncInterval: 0.1
+  level: 1
+  maxLevel: 3
+  capacity:
+    baseValue: 99
+    bonusPerLevel: 0
+  upgradeCost: []
+  refreshInterval: 1
+  defaultEquipment:
+  - title: 
+    state: 0
+    timer: 0
+    minLevel: 1
+    maxLevel: 1
+    template: {fileID: 11400000, guid: b608237cc998e4e45b469f651b1e10eb, type: 2}
+  dummyEquipment: []
+  randomizeIndex: 0
+--- !u!114 &6619389058472513143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8534359147886369699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1740185c5e5494e049e68fe15fe18f40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 1
+  syncInterval: 0.1
+  level: 1
+  maxLevel: 3
+  capacity:
+    baseValue: 99
+    bonusPerLevel: 0
+  upgradeCost: []
+  refreshInterval: 1
+  defaultItems:
+  - title: 
+    state: 0
+    timer: 0
+    minAmount: 1
+    maxAmount: 1
+    template: {fileID: 11400000, guid: 22df250a51d774cf687c5e5c3b7690ff, type: 2}
+  dummyItems: []
+  randomizeIndex: 0
+--- !u!114 &2606598256019793590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8534359147886369699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73ccec0827d9d4534bc5c111ea8de383, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 1
+  syncInterval: 0.1
+  level: 1
+  maxLevel: 3
+  capacity:
+    baseValue: 99
+    bonusPerLevel: 0
+  upgradeCost: []
+  refreshInterval: 1
+  defaultSkills:
+  - title: 
+    state: 0
+    timer: 0
+    minLevel: 1
+    maxLevel: 1
+    template: {fileID: 11400000, guid: 163dbef40386f4f7e943d1f85ea9bc72, type: 2}
+  dummySkills: []
+  randomizeIndex: 0
+--- !u!114 &1084528879174032868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8534359147886369699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b152323ae6c3243ebbb4caa5e4c56f11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 1
+  syncInterval: 0.1
+  level: 1
+  maxLevel: 3
+  capacity:
+    baseValue: 99
+    bonusPerLevel: 0
+  upgradeCost: []
+  refreshInterval: 1
+  defaultSpells:
+  - title: 
+    state: 0
+    timer: 0
+    minLevel: 1
+    maxLevel: 1
+    template: {fileID: 11400000, guid: fea6693ff090a4b52a19113a6502a1b3, type: 2}
+  dummySpells: []
+  randomizeIndex: 0
+--- !u!114 &4054298789496815916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8534359147886369699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7465c6db2bc344158860b6be110933fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 1
+  syncInterval: 0.1
+  level: 1
+  maxLevel: 3
+  capacity:
+    baseValue: 99
+    bonusPerLevel: 0
+  upgradeCost: []
+  refreshInterval: 1
+  defaultTechnologies:
+  - title: 
+    state: 0
+    timer: 0
+    minLevel: 1
+    maxLevel: 1
+    template: {fileID: 11400000, guid: ab84f91bf2efc4f5a9d1fceea38ea2e3, type: 2}
+  dummyTechnologies: []
+  randomizeIndex: 0
+--- !u!114 &6773717741541199740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8534359147886369699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e837e888020b4606aee6149dec3b7ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 1
+  syncInterval: 0.1
+  level: 1
+  maxLevel: 3
+  capacity:
+    baseValue: 99
+    bonusPerLevel: 0
+  upgradeCost: []
+  refreshInterval: 1
+  defaultUnits:
+  - title: 
+    state: 0
+    timer: 0
+    minLevel: 1
+    maxLevel: 1
+    template: {fileID: 11400000, guid: 9127721dc0617425ba2e238de014e691, type: 2}
+  dummyUnits: []
+  randomizeIndex: 0
+--- !u!114 &1705918617139644489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8534359147886369699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a55d730c7c6a944c2b98a71c2134d0eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 1
+  syncInterval: 0.1
+  level: 1
+  maxLevel: 3
+  capacity:
+    baseValue: 99
+    bonusPerLevel: 0
+  upgradeCost: []
+  refreshInterval: 1
+--- !u!114 &6831931554134797334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8534359147886369699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 526a63110bfd64fb0a112711e2576380, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  refreshInterval: 1
+--- !u!114 &3173196976442997774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8534359147886369699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9943ae615c76c431f8a740c693ab1b78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  level: 1
+  maxLevel: 3
+  capacity:
+    baseValue: 99
+    bonusPerLevel: 0
+  upgradeCost: []
+  refreshInterval: 1
+  defaultAchievements: []
+--- !u!114 &8079742343300827981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8534359147886369699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21e34ca860ab74660b872e2f7bdb989f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  level: 1
+  maxLevel: 3
+  capacity:
+    baseValue: 99
+    bonusPerLevel: 0
+  upgradeCost: []
+  refreshInterval: 1
+--- !u!114 &43393176051856834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8534359147886369699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3fa606cd4237402bb33a9fb5f665087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  refreshInterval: 1
+  defaultEvents: []
+--- !u!114 &1779890651848040830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8534359147886369699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7694c6185bca48938a42cdf5c30124d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  refreshInterval: 1
+  requirements: []
